@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<h1>DOOMSDAY S<img src="sin.png"></h1>
+
+<ul>
+    <li><a class="active" href=""> Home</a></li>
+    <li><a href="ind2.html">Types</a></li>
+    <li><a href="ind3.html">Organisms</a></li>
+    <li><a href="ind4.html">SuperBiology</a></li>
+</ul>
+
+</header>
+
+<section>
+<img src="moon.png" id="moon" alt="">
+<img src="stars.png" id="stars" alt="">
+<img src="ships.png" id="ship" alt="">
+<img src="Town.png" id="build" alt="">
+<img src="shooting star.png" id="shoot" alt="">
+</section>
+
+
+<div class="sec">
+    <h1>DOOMSDAY SINFINITY</h1>
+    <p>Lets set sail to the future of space.This website takes you on a jouney exploring the different stresses found in 
+    vaccum and space and how different organisms counter it</p>
+<video autoplay loop muted plays-inline width="1100" height="740"><<source src="nasaorg.mp4"  type="video/mp4"  > </video>
+</div>
+
+
+<script>
+let stars = document.querySelector("#stars");
+let moon = document.querySelector("#moon");
+let ship = document.querySelector("#ship");
+let shoot = document.querySelector("#shoot");
+
+
+
+window.addEventListener("scroll" , function(){
+let value = window.scrollY ; 
+stars.style.left = -100 + value * 0.09 + "px";
+stars.style.top = -value * 0.01 + "px";
+
+ship.style.left = (130 - value*0.4) + "px";
+
+shoot.style.left = value * 1.5 + "px";
+
+})
+
+
+
+
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <header>
+        <h1>logo</h1>
+       
+        <ul>
+            <li>  <a class="active" href="">Home</a> </li>
+            <li> <a href="">About</a></li>
+            <li> <a href="">Work</a></li>
+            <li> <a href="">Contact</a></li>
+        
+        </ul>
+    
+    </header>
+
+<section>
+<img src="./2600.png" id="moon" alt="">
+<img src="./2634500.png" id="stars" alt="">
+<img src="./2820.png" id="ship" alt="">
+<img src="./262300.png" id="build" alt="">
+<img src="./384.png" alt="" id="shoot">
+</section>
+
+<div class="sec">
+
+<h1>parallex Scrolling Effects</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui provident, pariatur, culpa natus quod doloremque vero debitis architecto iusto, dolor molestiae illum ducimus voluptatibus quisquam eius dolorum minus ullam illo numquam tempora commodi officia id nobis itaque! Quisquam, magnam nulla corrupti nemo porro, et, quae magni iusto accusamus vero necessitatibus.</p>
+
+
+
+
+
+</div>
+
+<script>
+let stars = document.querySelector("#stars");
+let moon = document.querySelector("#moon");
+let ship = document.querySelector("#ship");
+let shoot = document.querySelector("#shoot");
+
+
+window.addEventListener("scroll" , function(){
+    let value = window.scrollY ; 
+stars.style.left = -100 + value * 0.09+ "px"
+stars.style.top =  -value * 0.01+ "px"
+
+
+
+    ship.style.left= (130 - value*0.4)  + "px" ; 
+
+
+shoot.style.left = value * 1.5+ "px" ; 
+
+
+
+
+})
+
+
+
+
+
+
+
+
+</script> -->
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<h1>DOOMSDAY S<img src="sin.png"></h1>
+
+<ul>
+    <li><a  href="index.html"> Home</a></li>
+    <li><a href="ind2.html">Types</a></li>
+    <li><a href="ind3.html">Organisms</a></li>
+    <li><a  class="active"href="">SuperBiology</a></li>
+</ul>
+
+</header>
+
+<section>
+<img src="moon.png" id="moon" alt="">
+<img src="stars.png" id="stars" alt="">
+<img src="ships.png" id="ship" alt="">
+<img src="Town.png" id="build" alt="">
+<img src="shooting star.png" id="shoot" alt="">
+</section>
+
+
+<div class="sec">
+    <h1>DOOMSDAY SINFINITY</h1>
+    <p>For my biological superhero I have created a human being(mutated ofcourse) and combined him withthe genetic disposition of Cockroachesand tardines.
+    with an artificial exoskeleton structure. he has the following characteristics.
+    <br>
+    1.Can withstand high pressures
+    2.Can survive in vaccum and extremely dry weather
+    3.Can survic cosmic radiation and microgravity
+    </p>
+<video autoplay loop muted plays-inline width="1100" height="740"><<source src="The space is a wonderful place to visit but it does surely take a toll on an astronaut's body, hence scientists today try to simulate the stressful conditons to help the astronauts ease their pain (1).mp4"  type="video/mp4"  > </video>
+</div>
+
+
+<script>
+let stars = document.querySelector("#stars");
+let moon = document.querySelector("#moon");
+let ship = document.querySelector("#ship");
+let shoot = document.querySelector("#shoot");
+
+
+
+window.addEventListener("scroll" , function(){
+let value = window.scrollY ; 
+stars.style.left = -100 + value * 0.09 + "px";
+stars.style.top = -value * 0.01 + "px";
+
+ship.style.left = (130 - value*0.4) + "px";
+
+shoot.style.left = value * 1.5 + "px";
+
+})
+
+
+
+
+</script>
